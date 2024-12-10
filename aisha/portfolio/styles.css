@@ -1,0 +1,107 @@
+body {
+    font-family: 'Noto Serif' ,serif;
+    margin:0%;
+    padding:0%;
+    line-height: 1.6;
+    height: 100%;
+    background-color: #aeaff79a;
+}
+
+p {
+    font-size: 20px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #3d3b3b;
+    color: #d07191;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #87d5f3;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color:#1d1d1d;
+}
+
+.project {
+    margin: 1rem 0;
+    background: #d4ebf83a;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffe5dd;
+    border-radius: 5px;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+}
+
+.section {
+    padding: 50px 20px;
+    margin-top: 80px;
+}
+
+#about, #projects, #contact {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,8,0,0.1);
+    margin-bottom: 28px;
+}
+
+section h2 {
+    margin-top: 0;
+}
