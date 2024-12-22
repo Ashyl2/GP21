@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7b92f7;
+    color: white;
+    font-family: 'Press Start 2P', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+}
+
+a {
+    color: #ccc7c7;
+}
+
+h1 {
+    line-height: 1.4;
+}
+
+.btn {
+    border: 0;
+    background-color: white;
+    color: #5167c7;
+    padding: 15px 20px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.screen { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;              
+    width: 100vw;
+    transition: margin 0.5s ease-out;
+}
+
+.screen.up {
+    margin-top: -100vh;
+}
+
+.animal-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.animal-list li {
+    margin: 10px;
+}
+
+.choose-Animal-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    width: 150px;
+    height: 150px;
+}
+
+.choose-Animal-btn:hover {
+    background-color: white;
+    color: #5167c7;
+}
+
+.choose-Animal-btn:active {
+    background-color: #7b92f7;
+}
+
+.choose-Animal-btn img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.game-container {
+    position: relative;
+}
+
+.time,
+.score {
+    position:absolute;
+    top: 20px;
+}
+
+.time {
+    left: 20px;
+}
+
+.score {
+    right: 20px;
+}
+
+.animal {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.Animal.caught {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.Animal img {
+    width: 100px;
+    height: 100px;
+
+}
+

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*Applies to all elm*/
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* gonna try the px later to see the diff*/
+    margin: 0; /* try to figure out what this do later*/
+}
+
+canvas {
+    border: 2px solid rgba(197, 118, 243, 0.527);
+}
+
+.toolbox {
+    background-color: rgba(197, 118, 243, 0.527);
+    border: 1px solid rgba(135, 106, 241, 0.527);
+    display: flex;
+    width: 803px;
+    padding: 1rem;
+}
+
+.toolbox > * {
+    background-color: white;
+    border: none;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    height: 35px;
+    width: 40px;
+    margin: 0.3rem;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.toolbox > *:last-child {    /* last child is the last element */ 
+    margin-left: auto;
+}
